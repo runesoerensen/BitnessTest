@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SharpSvn;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace BitnessTest
         [Fact]
         public void Foo()
         {
+            var client = new SvnRepositoryClient();
             Assert.Equal(1, 1);
         }
     }
